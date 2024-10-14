@@ -5,11 +5,14 @@
 	</head>
 
 	<body>
-		<p id = "text1">Welcome </p>
-		<button id = "button1"> Change </button>
+		<p id = "text1"> Welcome to Style Change - JavaScript 4 </p>
+		<button id = "button1"> Style Change </button>
 		
-		<p id = "text2"></p>
-		<button id = "button2"> Input </button>
+		<p id = "text2"> Change the font size </p>
+		<button id = "button2"> Size Change </button>
+
+		<p id = "text3"> Hide the text </p>
+		<button id = "button3"> Text Hider </button>
 
 		<Script type = "text/javascript"> // is an HTML tag used to include JavaScript code within an HTML document
 		
@@ -18,16 +21,22 @@
             //Now we want to chage the text after the click the button that's why we use 'onClick'
 			document.getElementById("button1").onclick = function(){
 				
-				//First get the output of 'text1' and add the another command after "text1" when click the button
-				document.getElementById("text1").innerHTML = document.getElementById("text1").innerHTML +  "to the JavaScript 3!";            
+				//After we click the button the text change into blue
+				document.getElementById("text1").style.color = "blue";            
             }
-
 
 			document.getElementById("button2").onclick = function(){
-				//When click the Input button this HIDDEN text appears
-				 document.getElementById("text2").innerHTML = "This exhibits when click the Input Button!";            
+				
+				//After we click the button the text change into blue
+				document.getElementById("text2").style.fontSize = "25px";            
             }
 
+
+			document.getElementById("button3").onclick = function(){
+				
+				//After we click the button the text change into blue
+				document.getElementById("text3").style.display = "none";            
+            }
 		
 		</Script>
 	</body>
