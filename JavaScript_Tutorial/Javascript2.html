@@ -1,0 +1,25 @@
+<html>
+
+	<head>
+		<title> Java script</title>
+	</head>
+
+	<body>
+		<p id = "text1">Welcome to JavaScript 2</p>
+
+		<button id = "button1"> Change Button </button>
+
+		<Script type = "text/javascript"> // is an HTML tag used to include JavaScript code within an HTML document
+		
+        //JavaScript Topic - Response to a Click Javascript     
+
+            //Now we want to chage the text after the click the button that's why we use 'onClick'
+			document.getElementById("button1").onclick = function(){
+                //here we mentioned the instructions that should execute under  function()
+                document.getElementById("text1").innerHTML = "Welcome to OnClick Button Function!";
+            }
+		
+		</Script>
+
+	</body>
+</html>

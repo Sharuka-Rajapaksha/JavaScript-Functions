@@ -1,0 +1,34 @@
+<html>
+
+	<head>
+		<title> Java script</title>
+	</head>
+
+	<body>
+		<p id = "text1">Welcome </p>
+		<button id = "button1"> Change </button>
+		
+		<p id = "text2"></p>
+		<button id = "button2"> Input </button>
+
+		<Script type = "text/javascript"> // is an HTML tag used to include JavaScript code within an HTML document
+		
+        //JavaScript Topic 3 - Change Web Content
+        
+            //Now we want to chage the text after the click the button that's why we use 'onClick'
+			document.getElementById("button1").onclick = function(){
+				
+				//First get the output of 'text1' and add the another command after "text1" when click the button
+				document.getElementById("text1").innerHTML = document.getElementById("text1").innerHTML +  "to the JavaScript 3!";            
+            }
+
+
+			document.getElementById("button2").onclick = function(){
+				//When click the Input button this HIDDEN text appears
+				 document.getElementById("text2").innerHTML = "This exhibits when click the Input Button!";            
+            }
+
+		
+		</Script>
+	</body>
+</html>
