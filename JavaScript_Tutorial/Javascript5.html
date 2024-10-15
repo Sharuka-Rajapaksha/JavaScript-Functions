@@ -11,8 +11,8 @@
 		<button id="updateButton"> Update </button>
 
 		<p id="text1"> This is JavaScript 5 - Variables</p>
-
 		<p id="text2"> What you want to learn today?</p>
+		<p id="text3"> This is Text 3</p>
 
 		<Script type = "text/javascript"> // is an HTML tag used to include JavaScript code within an HTML document
 		
@@ -46,6 +46,11 @@
 			// Add the entered Input after "text2"
 			document.getElementById("text2").innerHTML = document.getElementById("text2").innerHTML + textEntered;
 			
+			//After clicking the Input button the entered data added after word "Hello"
+			var Hello = "Hello";
+			document.getElementById("text3").innerHTML = Hello + textEntered;
+
+
 		}
 
 		
