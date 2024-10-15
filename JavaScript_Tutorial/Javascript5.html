@@ -12,6 +12,9 @@
 
 		<p id="text1"> This is JavaScript 5 - Variables</p>
 
+		<p id="text2"> What you want to learn today?</p>
+
+
 		<Script type = "text/javascript"> // is an HTML tag used to include JavaScript code within an HTML document
 		
         //JavaScript Topic 5 - Variables
@@ -36,10 +39,15 @@
 			//get and assign the input value into the created variable
 			textEntered = document.getElementById("textinput").value;
 			//display the input value as a alert message
-			alert (textEntered);
+			//alert (textEntered);	
+			
+			// Replace the "text1" with "textEntered"
+			document.getElementById("text1").innerHTML = textEntered;
 
+			
 		}
 
+		
 		</Script>
 	</body>
 </html>
