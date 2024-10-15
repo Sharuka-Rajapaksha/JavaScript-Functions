@@ -1,0 +1,45 @@
+<html>
+
+	<head>
+		<title> Java script</title>
+	</head>
+
+	<body>
+
+		<input type = "text" id = "textinput"></input>
+		
+		<button id="updateButton"> Update </button>
+
+		<p id="text1"> This is JavaScript 5 - Variables</p>
+
+		<Script type = "text/javascript"> // is an HTML tag used to include JavaScript code within an HTML document
+		
+        //JavaScript Topic 5 - Variables
+        
+		/*
+			var x = 10; 
+			alert(x);
+			
+			var y =15; y=20;
+			alert(y);
+
+			var name = "John";
+			alert(name);
+		*/
+
+		document.getElementById("updateButton").onclick = function(){
+
+			//Inside these brackets we exhibits what are the functions that we require to execute after click the Button
+			
+			//Consider as a string
+			var textEntered = ""
+			//get and assign the input value into the created variable
+			textEntered = document.getElementById("textinput").value;
+			//display the input value as a alert message
+			alert (textEntered);
+
+		}
+
+		</Script>
+	</body>
+</html>
