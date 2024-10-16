@@ -1,0 +1,48 @@
+<html>
+
+	<head>
+		<title> Java script</title>
+	</head>
+
+	<body>
+
+		<Script type = "text/javascript"> // is an HTML tag used to include JavaScript code within an HTML document
+		
+        //JavaScript Topic 6 - Array
+       
+			/*
+			var x = new Array(); // create an Array for variable x
+			x[0] = "This is Array Data 1";
+			x[1] = "This is Array Data 2";
+			x[2] = "This is Array Data 3";
+
+			alert(x[0]);
+			alert(x[1]);
+			alert(x[2]);
+
+			console.log(x);
+			*/
+
+			var tweet = ["Good morning", "Good afternoon", "Good evening"];
+			console.log(tweet); //Display whole array data in the console
+
+			tweet.push("Good night"); //Adding another data to the previously created Array
+
+			console.log(tweet[2]); //Disply only array data 2
+
+			//delete a data in array - in the console you can see the tweet[1] data is delete. 
+			//We start from value 1 and delete 1 value after the beginning value - (1,1)
+			//tweet.splice(1,1);
+
+			//We start from value 1 and delete 2 values after the beginning value - (1,2)
+			//tweet.splice(1,2);
+
+			//Add additional value to the First Array Position
+			//tweet.splice(1,0,"Hyvää Hyömentä!");
+
+			//Add additinal two values into First and Second Array Positionz
+			tweet.splice(1,0,"Hyvää Hyömentä!", "Hyvää Iltää");
+
+		</Script>
+	</body>
+</html>
