@@ -1,0 +1,27 @@
+<html>
+
+	<head>
+		<title> JavaScript 12 - While Loop</title>
+	</head>
+
+	<body>
+
+    <div id="tweetDiv"></div>
+        
+		<Script type = "text/javascript"> 
+
+            var tweetString = ""; //create a variable and it equals to empty value
+
+            var tweet = ["Good Morning!", "Good Afternoon!", "Good Evening!", "Good Night!", "See Ya!"];
+
+            var i = 0;
+            while(i < tweet.length){
+                tweetString = tweetString + "<p>" + tweet[i] + "</p>"
+                i++;
+            }
+
+            document.getElementById("tweetDiv").innerHTML = tweetString;
+
+		</Script>
+	</body>
+</html>
