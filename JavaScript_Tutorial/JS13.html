@@ -1,0 +1,40 @@
+<html>
+
+	<head>
+		<title> JavaScript 13 - While Loop - Number Guess game!</title>
+	</head>
+
+    <p>Which number will the user think?</p>
+    <p><input type="text" id="inputText" ></p>
+	<button id="button"> Generate Number </button>
+    <body>
+
+		<Script type = "text/javascript"> 
+
+            document.getElementById("button").onclick = function(){
+
+                var myNumber = document.getElementById("inputText").value;
+                var numberOfGuess = 1;
+                var correctGuess = false;
+                
+                while(correctGuess == false){
+                    var guess =  Math.floor(Math.random() * 10);
+
+                    //Math.floor - Convert the number to the closet 10
+                    //Math.randomm()*10 - Multiply the number by 10 to get a full number
+                    
+                    if(guess == myNumber){
+                        correctGuess = true;
+                        alert("Correct number is: " + guess + " Number of tries: " + numberOfGuess);
+                    }
+                    else{
+                        numberOfGuess++;   
+                    }
+                }
+
+            }
+
+
+		</Script>
+	</body>
+</html>
