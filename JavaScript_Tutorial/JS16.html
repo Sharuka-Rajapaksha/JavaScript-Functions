@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <title>JS15 - Function 2</title>
+</head>
+
+    <p>Enter two numbers:</p>
+    <p><input type="number" id="inputNumber1"></p>
+    <p><input type="number" id="inputNumber2"></p>
+
+    <button id="button1">Display Average</button>
+    <button id="button2">Diaplay Total</button>
+    <button id="button3">Diaplay Substract</button>
+    <button id="button4">Diaplay Multiplication</button>
+
+    <p id="result"></p>       <!-- This Element use to display the Average result -->
+    <p id="result2"></p>        <!-- This Element use to display the Total result -->
+    <p id="result3"></p>        <!-- This Element use to display the Substract result -->
+    <p id="result4"></p>  
+
+<body>
+    <script type = "text/javascript">
+
+        document.getElementById("button1").onclick = function(){
+
+            var no1 = document.getElementById("inputNumber1").value;
+            // Convert the input value to a number
+            var numberValue1 = Number(no1);
+
+            var no2 = document.getElementById("inputNumber2").value;
+            // Convert the input value to a number
+            var numberValue2 = Number(no2);
+
+                function average(no1,no2){
+                    return((no1+no2)/2);
+                }
+                // Calculate the average
+                var averageValue = average(numberValue1, numberValue2);
+
+                // Display the result in the 'result' paragraph
+                document.getElementById("result").innerHTML = "The average is: " + averageValue;
+        }
+
+
+        document.getElementById("button2").onclick = function(){
+
+        var no1 = document.getElementById("inputNumber1").value;
+        // Convert the input value to a number
+        var numberValue1 = Number(no1);
+
+        var no2 = document.getElementById("inputNumber2").value;
+        // Convert the input value to a number
+        var numberValue2 = Number(no2);
+
+            function total(no1,no2){
+                return(no1+no2);
+            }
+
+            // Calculate the total
+            var totalValue = total(numberValue1, numberValue2);
+            
+            // Display the result in the 'result' paragraph
+            document.getElementById("result2").innerHTML = "The Total is: " + totalValue;
+        }
+
+
+        document.getElementById("button3").onclick = function(){
+
+        var no1 = document.getElementById("inputNumber1").value;
+        // Convert the input value to a number
+        var numberValue1 = Number(no1);
+
+        var no2 = document.getElementById("inputNumber2").value;
+        // Convert the input value to a number
+        var numberValue2 = Number(no2);
+
+            function Substract(no1,no2){
+                return(no1 - no2);
+            }
+
+            // Calculate the total
+            var SubstractValue = Substract(numberValue1, numberValue2);
+            
+            // Display the result in the 'result' paragraph
+            document.getElementById("result3").innerHTML = "The Total is: " + SubstractValue;
+        }
+
+
+        document.getElementById("button3").onclick = function(){
+
+        var no1 = document.getElementById("inputNumber1").value;
+        // Convert the input value to a number
+        var numberValue1 = Number(no1);
+
+        var no2 = document.getElementById("inputNumber2").value;
+        // Convert the input value to a number
+        var numberValue2 = Number(no2);
+
+            function Substract(no1,no2){
+                return(no1 - no2);
+            }
+
+            // Calculate the total
+            var SubstractValue = Substract(numberValue1, numberValue2);
+            
+            // Display the result in the 'result' paragraph
+            document.getElementById("result3").innerHTML = "The Total is: " + SubstractValue;
+        }
+
+
+        document.getElementById("button4").onclick = function(){
+
+        var no1 = document.getElementById("inputNumber1").value;
+        // Convert the input value to a number
+        var numberValue1 = Number(no1);
+
+        var no2 = document.getElementById("inputNumber2").value;
+        // Convert the input value to a number
+        var numberValue2 = Number(no2);
+
+            function multiply(no1,no2){
+                return(no1 * no2);
+            }
+
+            // Calculate the total
+            var MultiplicationValue = multiply(numberValue1, numberValue2);
+            
+            // Display the result in the 'result' paragraph
+            document.getElementById("result4").innerHTML = "The Total is: " + MultiplicationValue;
+        }
+
+
+</script>
+</body>
+
+
+</html>
