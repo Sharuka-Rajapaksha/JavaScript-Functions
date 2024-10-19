@@ -18,10 +18,10 @@
             while(i < tweet.length){
                 tweetString = tweetString + "<p>" + tweet[i] + "</p>"
                 i++;
+                document.getElementById("tweetDiv").innerHTML = tweetString;
             }
 
-            document.getElementById("tweetDiv").innerHTML = tweetString;
-
+            
 		</Script>
 	</body>
 </html>
