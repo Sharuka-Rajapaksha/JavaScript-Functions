@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+        Welcome to JS17 - Final Game Part - 1
+    </title>
+
+    <style type ="text/css">
+        #shape{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="shape"></div>
+
+    <script id="text/javascript">
+
+        var start = new Date().getTime();
+
+        document.getElementById("shape").onclick = function(){
+
+            document.getElementById("shape").style.display = "none";
+            
+            var end = new Date().getTime();
+            var time = (end - start)/1000; //we can convert the time into seconds by dividing 1000
+            alert( "Time get to click the displayed item: " + time + " seconds");
+
+       
+        }
+
+        
+
+    </script>
+
+
+
+
+</body>
+
+</html>
