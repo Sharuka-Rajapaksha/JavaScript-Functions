@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>JS18 - Final Game Part 2</title>
+
+    <style type ="text/css">
+        #shape{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            display: none;
+        }
+    </style>
+</head>
+
+
+
+    
+<body>
+    <p id="time"></p>
+
+    <div id="shape"></div>
+
+    <script id= "text/javascript">
+
+    var start = new Date().getTime();
+
+    function shapeAppear(){
+        document.getElementById("shape").style.display = "block";
+        var start = new Date().getTime();
+    }
+
+    function ShapeAppearDelay(){
+        setTimeout(shapeAppear, Math.random()*2000); //delay the icon showing time randomly
+    }
+    
+    ShapeAppearDelay();
+    document.getElementById("shape").onclick = function(){
+
+        document.getElementById("shape").style.display = "none";
+        
+        var end = new Date().getTime();
+        var time = (end - start)/1000; //we can convert the time into seconds by dividing 1000
+       
+        document.getElementById("time").innerHTML = "Time get to click the displayed item is: " + time + " seconds";
+        ShapeAppearDelay();
+    }  
+
+
+
+</script>
+
+</body>
+
+</html>
